@@ -13,7 +13,7 @@ main() {
     fi
     # if [ $output == "" ]; then
     if [ -z $output ]; then
-        echo $number
+        echo "$number" # variable expansion should be enclosed in double quotes to prevent word splitting and globbing issues.
     else
         echo $output
     fi
