@@ -40,7 +40,7 @@ main2() {
 
 main3() {
     str=${1,,}
-    uniq_count=$(echo "$str" | grep -o [a-z] | sort -u | wc -l)
+    uniq_count=$(echo "$str" | grep -o "[a-z]" | sort -u | wc -l)
     ((uniq_count == 26)) && echo true || echo false
 }
 
